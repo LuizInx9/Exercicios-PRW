@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3.8</title>
+</head>
+<body>
+    <!--
+    Criar uma aplicação web destinada a auxiliar a compra de medicamentos. Em um formulário, 
+    o cliente pode escolher até três medicamentos quaisquer, por meio de elementos checkbox. 
+    Em seguida, um script em PHP deverá cadastrar, em um vetor de índice associativo, 
+    o preço de cada medicamento a ser adquirido. Use o nome do remédio de cada checkbox como índice 
+    associativo deste vetor.
+    Também, o formulário deve apresentar um checkbox para que o usuário da aplicação mencione se o cliente 
+    em questão tem 60 anos de idade ou mais.
+    Finalmente, o script em PHP deverá mostrar na página web o valor final da compra decorrente dos remédios 
+    adquiridos pelo cliente no formulário. Notar que, se o cliente tiver 60 anos ou mais, ele terá direito a um desconto de 5% no valor pago inicialmente por todos os medicamentos comprados.
+    -->
+    
+    <h1>Exercício 3.8</h1>
+
+    <form action="farmacia.php" method="post">
+        <label for="med">Escolha os remédios desejados:</label><br><br>
+        <input type="checkbox" name="ibuprofeno" id="med" value="10">Ibuprofeno<br>
+        <input type="checkbox" name="neosaldina" id="med" value="15">Neosaldina<br>
+        <input type="checkbox" name="dipirona" id="med" value="5">Dipirona<br>
+
+        <label for="idade">O cliente possui mais de 60 anos</label>
+        <input type="checkbox" name="idoso" id="idade">
+
+
+
+        <input type="submit" value="Prosseguir para o carrinho">
+    </form>
+
+
+
+</body>
+</html>

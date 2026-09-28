@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exrcício 3.13</title>
+</head>
+<body>
+    <!--
+
+    Uma farmácia registra as seguintes informações para cada um dos seus medicamentos:
+
+        Código do medicamento (identificador único);
+        Nome do medicamento;
+        Preço de venda.
+
+    Criar um formulário que cadastre estes dados para três medicamentos quaisquer. Em seguida, criar um script 
+    em PHP que:
+
+    a) Armazene estes dados em uma estrutura matricial. Use o código do medicamento como índice associativo;
+
+    b) Mostre os dados de todos os medicamentos cadastrados na matriz no formato tabular;
+
+    c) Mostre, na página web, o nome do medicamento mais barato cadastrado;
+
+    d) Receba, do formulário acima, devidamente modificado, o código de um medicamento qualquer. O script em PHP 
+    deverá pesquisar este código na matriz e mostrar todas as informações do respectivo medicamento. Se o mesmo 
+    não for encontrado, mostrar uma mensagem apropriada.
+-->
+
+    <h1>Exercício 3.13</h1>
+    
+    <form action="dados.php" method="post">
+        <h2>Primeiro medicamento</h2>
+        <label for="codMed1">Código do medicamento: </label>
+        <input type="number" id="codMed1" name="cod1" required><br><br>
+
+        <label for="nomeMed1">Nome do medicamento: </label>
+        <input type="text" id="nomeMed1" name="nome1" required><br><br>
+
+        <label for="precoMed1">Preço do medicamento: </label>
+        <input type="number" id="precoMed1" name="preco1" required><br><br>
+
+        <h2>Segundo medicamento</h2>
+        <label for="codMed2">Código do medicamento: </label>
+        <input type="number" id="codMed2" name="cod2" required><br><br>
+
+        <label for="nomeMed2">Nome do medicamento: </label>
+        <input type="text" id="nomeMed2" name="nome2" required><br><br>
+
+        <label for="precoMed2">Preço do medicamento: </label>
+        <input type="number" id="precoMed2" name="preco2" required><br><br>
+
+        <h2>Terceiro medicamento</h2>
+        <label for="codMed3">Código do medicamento: </label>
+        <input type="number" id="codMed3" name="cod3" required><br><br>
+
+        <label for="nomeMed3">Nome do medicamento: </label>
+        <input type="text" id="nomeMed3" name="nome3" required><br><br>
+
+        <label for="precoMed3">Preço do medicamento: </label>
+        <input type="number" id="precoMed3" name="preco3" required><br><br>
+
+        <!--CONSULTAR-->
+
+        <h2>Consultar medicamento</h2>
+        <label for="consultaMed">Código do medicamento a ser consultado: </label>
+        <input type="text" id="consultaMed" name="consulta"><br><br>
+
+        <!--ENVIAR-->
+
+        <input type="submit" value="Enviar dados">
+    </form>
+
+
+
+</body>
+</html>
