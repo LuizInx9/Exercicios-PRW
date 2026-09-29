@@ -23,15 +23,18 @@ class Item{
             $this->preco -= $desconto;
         }
 
-        echo "Desconto: " . number_format($desconto, 2, ',' , '.');
+        echo "<h2>Desconto</h2>";
+        echo "Desconto: " . number_format($desconto, 2, ',' , '.') . "<br><br>";
     }
 
     public function precoFinal(){
-        echo "Preço final: " . number_format($this->preco, 2, ',' , '.');
+        echo "Preço final: " . number_format($this->preco, 2, ',' , '.') . "<br><br>";
     }
 
     public function exibirInfos(){
         echo "<h2>Informações do Item</h2>";
         echo "Nome do item: " . $this->nome . "<br><br>";
+        echo "Classificação: " . $this->classificacao . "<br><br>";
+        echo "Preço: " . number_format($this->preco, 2, ',' , '.') . "<br><br>";
     }
 }
