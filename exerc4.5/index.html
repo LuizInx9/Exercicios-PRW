@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4.5</title>
+</head>
+
+<!-- Necessitamos de uma aplicação web que implemente uma classe, na linguagem PHP, para representar os elementos mais importantes na definição de um objeto carro, a saber:
+
+a) Fabricante;
+b) Modelo;
+c) Preço de venda;
+d) Método construtor da classe;
+e) Método para exibir a classificação de um carro, de acordo com seu preço de venda, da seguinte forma:
+
+para até 100 mil reais — carro popular;
+entre 100 e 300 mil (inclusive) — performance intermediária;
+para carros acima de 300 mil reais — carros de alta performance;
+f) Método para exibir todas as informações somente de um carro que foi classificado como popular. Se o carro não
+ se encaixar nessa categoria, o método não deve exibir nenhuma informação e mostrar uma mensagem adequada.
+
+Criar um formulário, válido e correto, em HTML5, com as informações de cadastro dos dados do carro. Em seguida,
+ um script em PHP deve, utilizando a classe construída, criar um objeto carro com as informações do formulário,
+  exibir sua classificação e mostrar todas as suas informações, se for o caso.
+
+A definição da classe deve estar dentro de uma include em PHP.-->
+
+<body>
+    <h1>Cadastro do Carro</h1>
+
+    <form action="main.php" method="post">
+        <label for="modeloCarro">Insira o modelo do carro: </label>
+        <input type="text" id="modeloCarro" name="modelo" required><br><br>
+
+        <label for="fabricanteCarro">Insira a marca fabricante: </label>
+        <input type="text" id="fabricanteCarro" name="fabricante" required><br><br>
+
+        <label for="precoCarro">Insira o preço (R$): </label>
+        <input type="number" id="precoCarro" name="preco" min="0" required><br><br>
+
+        <input type="submit" value="Cadastrar carro">
+
+    </form>
+</body>
+</html>
